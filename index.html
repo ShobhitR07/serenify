@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenify - Your Mental Wellness Partner</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Space Grotesk', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .neu-brutal {
+            border: 3px solid #000;
+            box-shadow: 5px 5px 0px #000;
+            transition: all 0.2s ease;
+        }
+        .neu-brutal:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px #000;
+        }
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 8px;
+            background: #ff6b6b;
+            z-index: 100;
+        }
+        .benefit-card {
+            background: #ffd93d;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#f8f9fa]">
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-gradient-to-b from-[#4ecdc4] to-[#ffe66d] p-4 md:p-8">
+        <div class="container mx-auto">
+            <nav class="flex justify-between items-center mb-16 neu-brutal bg-white p-4 rounded-lg">
+                <h1 class="text-2xl font-bold">Serenify</h1>
+                <a href="#enroll" class="bg-[#ff6b6b] text-white px-6 py-2 rounded neu-brutal">Get Started</a>
+            </nav>
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Your Journey to Mental Wellness Starts Here</h1>
+                    <p class="text-xl mb-8">Connect with professional therapists in a safe, judgment-free space. Because your mental health matters.</p>
+                    <a href="#enroll" class="inline-block bg-[#ff6b6b] text-white px-8 py-4 text-xl rounded neu-brutal">Begin Your Healing Journey</a>
+                </div>
+                <div class="md:w-1/2">
+                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_kkflmtur.json" background="transparent" speed="1" loop autoplay class="w-full"></lottie-player>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-[#f8f9fa]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Why Choose Therapy?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="benefit-card p-6 neu-brutal">
+                    <i class="bi bi-heart-pulse text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Emotional Growth</h3>
+                    <p>Develop better understanding of your emotions and learn healthy coping mechanisms.</p>
+                </div>
+                <div class="benefit-card p-6 neu-brutal">
+                    <i class="bi bi-brain text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Mental Clarity</h3>
+                    <p>Gain clarity in decision-making and develop a more positive mindset.</p>
+                </div>
+                <div class="benefit-card p-6 neu-brutal">
+                    <i class="bi bi-people text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Better Relationships</h3>
+                    <p>Improve your relationships through better communication and understanding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-20 bg-[#4ecdc4]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">Our Core Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg neu-brutal">
+                    <i class="bi bi-shield-check text-4xl mb-4 text-[#ff6b6b]"></i>
+                    <h3 class="text-2xl font-bold mb-4">Complete Privacy</h3>
+                    <p>Your information and sessions are protected with bank-grade security.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg neu-brutal">
+                    <i class="bi bi-heart text-4xl mb-4 text-[#ff6b6b]"></i>
+                    <h3 class="text-2xl font-bold mb-4">No Judgement</h3>
+                    <p>A safe space where you can be yourself without any fear of judgment.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg neu-brutal">
+                    <i class="bi bi-hand-thumbs-up text-4xl mb-4 text-[#ff6b6b]"></i>
+                    <h3 class="text-2xl font-bold mb-4">Trust</h3>
+                    <p>Licensed professionals you can rely on for your mental wellness journey.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg neu-brutal">
+                    <i class="bi bi-stars text-4xl mb-4 text-[#ff6b6b]"></i>
+                    <h3 class="text-2xl font-bold mb-4">Effective Healing</h3>
+                    <p>Proven methods and personalized approach for lasting positive change.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <section id="enroll" class="py-20 bg-[#ffe66d]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Start Your Journey</h2>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg neu-brutal">
+                <p class="mb-8 text-center"><i class="bi bi-lock"></i> Your information is 100% secure and confidential</p>
+                <form id="enrollmentForm" class="space-y-6">
+                    <div>
+                        <label class="block mb-2">Name</label>
+                        <input type="text" required class="w-full p-3 border-2 border-black rounded neu-brutal">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Email</label>
+                        <input type="email" required class="w-full p-3 border-2 border-black rounded neu-brutal">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Phone</label>
+                        <input type="tel" required class="w-full p-3 border-2 border-black rounded neu-brutal">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Preferred Communication Method</label>
+                        <select class="w-full p-3 border-2 border-black rounded neu-brutal">
+                            <option>Video Call</option>
+                            <option>Phone Call</option>
+                            <option>Chat</option>
+                        </select>
+                    </div>
+                    <a href="https://wa.me/+918851542719?text=Hi%20Serenify%2C%20I%E2%80%99m%20reaching%20out%20to%20learn%20more%20about%20your%20services.%20I%E2%80%99m%20looking%20for%20support%20and%20guidance%2C%20and%20I%E2%80%99d%20love%20to%20know%20how%20you%20can%20help%20me%20on%20my%20journey%20to%20healing.%20%F0%9F%92%99" 
+                        target="_blank" 
+                        class="w-full bg-[#ff6b6b] text-white py-4 rounded neu-brutal text-xl flex items-center justify-center">
+                         Submit
+                     </a>
+                     
+                    <!-- <button type="submit" class="w-full bg-[#ff6b6b] text-white py-4 rounded neu-brutal text-xl">Submit</button> -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="bg-[#4ecdc4] text-white py-10">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Section -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">About Serenify</h3>
+                <p>Serenify is your mental wellness partner, providing professional guidance for a healthier, happier life.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#enroll" class="underline hover:text-[#ffe66d]">Get Started</a></li>
+                    <li><a href="#benefits" class="underline hover:text-[#ffe66d]">Benefits</a></li>
+                    <li><a href="#core-values" class="underline hover:text-[#ffe66d]">Core Values</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+                <ul class="space-y-2">
+                    <li><i class="bi bi-envelope-fill"></i> <a href="mailto:support@serenify.com" class="underline hover:text-[#ffe66d]">support@serenify.com</a></li>
+                    <li><i class="bi bi-phone-fill"></i> +1-800-123-4567</li>
+                    <li><i class="bi bi-geo-alt-fill"></i> 123 Wellness Street, Mindville</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 border-t border-white pt-4 text-center">
+            <p class="text-sm">&copy; 2024 Serenify. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="hover:text-[#ffe66d]"><i class="bi bi-facebook text-2xl"></i></a>
+                <a href="#" class="hover:text-[#ffe66d]"><i class="bi bi-twitter text-2xl"></i></a>
+                <a href="#" class="hover:text-[#ffe66d]"><i class="bi bi-instagram text-2xl"></i></a>
+                <a href="#" class="hover:text-[#ffe66d]"><i class="bi bi-linkedin text-2xl"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+
+        // Form Submission
+        document.getElementById('enrollmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for submitting! We will contact you soon.');
+        });
+
+        // Scroll Reveal Animation
+        ScrollReveal().reveal('.benefit-card', {
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom',
+            interval: 100
+        });
+
+        ScrollReveal().reveal('.neu-brutal', {
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom',
+            interval: 100
+        });
+    </script>
+</body>
+</html>
